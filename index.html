@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Hospital Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+  <div class="logo">🩺 HealthCare+</div>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#departments">Departments</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#services">Services</a>
+    <a href="#shop">Shop</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="header-icons">
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-bar"
+        placeholder="Search doctors, departments, medicines..."
+      />
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <i class="fas fa-shopping-cart cart-icon" title="Cart"></i>
+    <i class="fas fa-user user-icon" title="User Account"></i>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>
+        <span class="highlight-dark">HEALTH CARE</span>
+        <span class="highlight-blue">SOLUTION</span>
+      </h1>
+      <p>We provide our best opportunity and qualified trainers<br>for best workout yourself as you want.</p>
+      <div class="hero-buttons">
+        <a href="#" class="hero-btn btn-primary">SignUp Now</a>
+        <a href="#" class="hero-btn btn-secondary">View Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Departments</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Cardiology</h3>
+        <p>Heart care by top specialists</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tooth"></i>
+        <h3>Dental</h3>
+        <p>Complete dental solutions</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-brain"></i>
+        <h3>Neurology</h3>
+        <p>Brain & Nerve system care</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-bone"></i>
+        <h3>Orthopedics</h3>
+        <p>Bone & Joint treatments</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Doctors Section -->
+<section class="doctors">
+    <h2>Our Doctors</h2>
+    <div class="doctors-grid">
+      <div class="doctor-card">
+        <img src="https://images.pexels.com/photos/8460049/pexels-photo-8460049.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Doctor 1">
+        <h3>Dr. Aryan Mehta</h3>
+        <p>Cardiologist</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+      <div class="doctor-card">
+        <img src="https://images.pexels.com/photos/8460151/pexels-photo-8460151.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Doctor 2">
+        <h3>Dr. Sneha Rao</h3>
+        <p>Neurologist</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+      <div class="doctor-card">
+        <img src="https://images.pexels.com/photos/8460125/pexels-photo-8460125.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Doctor 3">
+        <h3>Dr. Ravi Sharma</h3>
+        <p>Dentist</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- E-commerce Medicine Shop Section -->
+<section class="shop">
+    <h2>Medicine & Health Shop</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/3683072/pexels-photo-3683072.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Medicine 1">
+        <h3>Paracetamol 500mg</h3>
+        <p>$4.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/4031818/pexels-photo-4031818.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Medicine 2">
+        <h3>Vicks Inhaler</h3>
+        <p>$2.50</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/3873190/pexels-photo-3873190.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Thermometer">
+        <h3>Thermometer</h3>
+        <p>$10.00</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Appointment Booking Section -->
+  <section class="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <select>
+        <option>Select Department</option>
+        <option>Cardiology</option>
+        <option>Dentistry</option>
+        <option>Neurology</option>
+      </select>
+      <input type="date">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Patients Say</h2>
+    <div class="testimonial-slider">
+      <p>"Wonderful experience with HealthCare+!"</p>
+      <p>"Doctors were very friendly and helpful."</p>
+      <p>"Great support and care during my treatment."</p>
+    </div>
+  </section>
+
+<!-- Blog Section -->
+<section class="blog-section" style="padding: 60px 20px; background: #f9f9f9;">
+    <h2 style="text-align: center; font-size: 32px; color: #2c3e50; margin-bottom: 40px;">📝 Health Articles</h2>
+    
+    <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+      
+      <div class="blog-card" style="background: #fff; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;">
+        <img src="https://images.pexels.com/photos/8660206/pexels-photo-8660206.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Heart Health" style="width: 100%; height: 220px; object-fit: cover;">
+        <div style="padding: 20px;">
+          <h3 style="color: #1e3d59; margin-bottom: 10px;">❤️ Tips for Heart Health</h3>
+          <p style="color: #555;">Learn effective ways to maintain a healthy heart through diet, exercise, and routine checkups.</p>
+          <a href="#" class="btn" style="margin-top: 15px; display: inline-block; background: #28a745; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none;">Read More</a>
+        </div>
+      </div>
+  
+      <div class="blog-card" style="background: #fff; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;">
+        <img src="https://images.pexels.com/photos/3055681/pexels-photo-3055681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=220" alt="Dental Checkup" style="width: 100%; height: 220px; object-fit: cover;">
+        <div style="padding: 20px;">
+          <h3 style="color: #1e3d59; margin-bottom: 10px;">🦷 Benefits of Dental Checkup</h3>
+          <p style="color: #555;">Find out why regular dental checkups are essential for overall oral hygiene and health.</p>
+          <a href="#" class="btn" style="margin-top: 15px; display: inline-block; background: #28a745; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none;">Read More</a>
+        </div>
+      </div>
+      
+  </section>
+  
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-col">
+      <h3>HealthCare+</h3>
+      <p>Trusted Hospital for a Better Tomorrow</p>
+      <p><i class="fas fa-map-marker-alt"></i> 34th Avenue, New York, NY</p>
+      <p><i class="fas fa-phone-alt"></i> +1 800 246 7921</p>
+      <p><i class="fas fa-envelope"></i> contact@healthcareplus.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Appointment</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Subscribe for health tips & updates</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <hr />
+    <p>© 2025 <strong>HealthCare+</strong> Hospital. All rights reserved.</p>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
